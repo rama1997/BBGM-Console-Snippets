@@ -201,14 +201,19 @@ async function activateSoulStone(holder) {
 		});
 	}
 
+	// Soul bound team that holder has played the longest for
 	const history = holder.stats;
+	let teamCount = {};
 	for (const year of history) {
-		if (year.tid >= 0) {
-			const soulBoundedTeam = year.tid;
-			holder.tid = soulBoundedTeam;
-			break;
+		if (year.tid >= 0) {				
+			teamCount[year.tid] = (teamCount[year.tid] || 0) + 1;
 		}
 	}
+	if (teamCount) {
+		let soulBoundTeamId = Object.keys(teamCount).reduce((a, b) => (teamCount[a] > teamCount[b] ? a : b));
+		holder.tid = soulBoundTeamId;
+	}
+
 
 	if (holder.tid >= 0) {
 		const teamPlayers = [];
