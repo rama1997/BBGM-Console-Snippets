@@ -14,7 +14,7 @@
   - Alter Reality to always "make shot"
   - +100 to Field Goal, Free Throw, Three Point, Inside Scoring, and Dunk
 - Soul — Sacrifice
-  - The holder is soul-bound to the first team they played for; returns to that team each season
+  - The holder is soul-bound to their most played team; returns to that team each season
   - Each season, a random teammate is sacrificed, and the holder absorbs a portion of their stats
 - Mind
   - +100 to Offensive IQ and Defensive IQ
@@ -211,7 +211,7 @@ async function activateSoulStone(holder) {
 	}
 	if (teamCount) {
 		let soulBoundTeamId = Object.keys(teamCount).reduce((a, b) => (teamCount[a] > teamCount[b] ? a : b));
-		holder.tid = soulBoundTeamId;
+		holder.tid = Number(soulBoundTeamId);
 	}
 
 
