@@ -11,7 +11,7 @@
   - +100 to Stealing – intercepting as if teleporting
   - Holder is automatically traded to the reigning champion at the start of the season
 - Reality
-  - Alter Reality to always "make shot"
+  - Alter Reality to always "make the shot"
   - +100 to Field Goal, Free Throw, Three Point, Inside Scoring, and Dunk
 - Soul — Sacrifice
   - The holder is soul-bound to their most played team; returns to that team each season
