@@ -1,15 +1,15 @@
 A mysterious plague sweeps through the league each season. Players randomly fall victim, being sidelined for the entire year — changing the competitive landscape in unpredictable ways.
 
 # How It Works
-- At the start of each season, every player has a small chance of being infected
+- Must enable the "No starting injuries" setting under League Settings. Only works with Real Player Mode
+- At the start of each season, every player has a 50/50 chance of being infected
 - Infected players are ruled out for 150 games, covering the entire regular season and all playoffs/play-ins
 - Infected players remain on rosters but do not play at all that year
-- The current version does not infect undrafted players (e.g., rookies from upcoming drafts)
 - It's recommended to run the plague just before the draft begins, so:
   - Newly drafted players aren’t affected
   - You maintain a healthier player pool for the season
   - Knowing who is infected before making offseason decisions (trades, free agency, etc.). Doesn't really matter for AI though.
-- Enable the "No starting injuries" setting under League Settings. Only works with Real Player Mode
+
 
 ```js
 var season = bbgm.g.get("season") + 1;
