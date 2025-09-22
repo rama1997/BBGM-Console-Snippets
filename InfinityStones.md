@@ -23,8 +23,8 @@
   
 ## Notes
 - General
+ 	- Mode is designed for stone activation/running code at the start of each season.
 	- Stone Transfer: Each season, there's a 6% chance a stone leaves its current holder and is randomly reassigned to another player
-	- Stone Activation: Mode is designed for stone activation/running code at the start of the season
 - Bugs
 	- Space/Soul Stone Bug: Players may be assigned to a team that no longer exists (e.g., after contraction or relocation). This won't crash the game, but the sim may stop progressing. You’ll need to manually reassign the player to an active team in this case.
 - Tips
